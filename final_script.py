@@ -774,14 +774,14 @@ class ZendeskDataCollection:
         self.jira_data_collector.create_csv()
 
 if __name__ == "__main__":
-    credentials = 'slack-bot@qubole.com/token' , sys.argv[3]
+    credentials = 'slack@.com/token' , sys.argv[3]
 
     #bounding_date = '2019-10-14'
     bounding_date = sys.argv[1]
     bounding_date += 'T00:00:00Z'
 
     jira_access_token = sys.argv[2]
-    jira_user = 'slack-bot@qubole.com'
+    jira_user = 'slack@'
 
     # bounding_date = '2019-05-14'
     # bounding_date += 'T12:00:00Z'
@@ -793,7 +793,7 @@ if __name__ == "__main__":
     #jira_data_collector.collect_jira_data_by_issue('ACM-2706')
     #jira_data_collector.create_csv()
 
-    zendesk = 'https://qubole.zendesk.com'
+    zendesk = 'https://zendesk.com'
     creation_bounding_date = '2018-12-31'
     #print("Data is being retrieved from date:", creation_bounding_date)
 
